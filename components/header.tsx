@@ -56,15 +56,17 @@ export default function Header() {
           <Link href="/#contact" className={`font-medium hover:text-green-500 transition-colors ${linkClass}`}>
             Contact
           </Link>
-          <Button
-            className={
-              isHomePage && !isScrolled
-                ? "bg-white hover:bg-white/90 text-green-700"
-                : "bg-green-700 hover:bg-green-800 text-white"
-            }
-          >
-            Get Started
-          </Button>
+          <Link href="/#services">
+            <Button
+              className={
+                isHomePage && !isScrolled
+                  ? "bg-white hover:bg-white/90 text-green-700"
+                  : "bg-green-700 hover:bg-green-800 text-white"
+              }
+            >
+              Get Started
+            </Button>
+          </Link>
         </nav>
 
         <button className="md:hidden" onClick={() => setIsMobileMenuOpen(true)} aria-label="Open menu">
