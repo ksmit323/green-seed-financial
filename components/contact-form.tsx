@@ -60,7 +60,7 @@ export default function ContactForm() {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="interest">I'm interested in</Label>
+        <Label htmlFor="interest">I&apos;m interested in</Label>
         <Select>
           <SelectTrigger id="interest">
             <SelectValue placeholder="Select an option" />

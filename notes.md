@@ -3,8 +3,6 @@
 
 - I don't like the way the main image renders.  It's too slow or something.
 
-- Make a repo
-
 - Change the Contact info
 
 - Change the Header so that it is always green in the /services endpoints
