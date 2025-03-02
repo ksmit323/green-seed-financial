@@ -70,18 +70,20 @@ export default function Home() {
               credit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/services/international-import">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-all duration-300 shadow-sm">
-                  For Foreign Buyers
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+              
               <Link href="/services/export-assistance">
-                <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white font-medium rounded-lg transition-all duration-300 shadow-sm ml-4">
+                <Button size="lg" className="bg-white hover:bg-gray-50 text-green-600 border-2 border-green-600 font-semibold rounded-full px-6 py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-md ml-4">
                   For U.S. Exporters
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
+              <Link href="/services/international-import">
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full px-6 py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-md">
+                  For Foreign Buyers
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              
             </div>
           </div>
         </div>
@@ -278,15 +280,15 @@ export default function Home() {
                 <div className="space-y-4">
                   <p className="flex items-center text-gray-600">
                     <Phone className="h-5 w-5 mr-2 text-green-700" />
-                    +1 (555) 123-4567
+                    +1 (954) 439-6108
                   </p>
                   <p className="flex items-center text-gray-600">
                     <Mail className="h-5 w-5 mr-2 text-green-700" />
-                    info@greenseedfinancial.com
+                    robert@greenseedfinancial.com
                   </p>
                   <p className="flex items-center text-gray-600">
                     <MapPin className="h-5 w-5 mr-2 text-green-700" />
-                    123 Financial District, New York, NY 10001
+                    123 Big Shrimpin Street, BubbaGump, Vietnam 
                   </p>
                 </div>
               </div>
