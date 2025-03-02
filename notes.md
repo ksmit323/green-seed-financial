@@ -3,10 +3,12 @@
 
 - I don't like the way the main image renders.  It's too slow or something.
 
-- Change the Contact info
-
 - Change the Header so that it is always green in the /services endpoints
 
-- Fix footer stuff
-
 - Fix link discrepancy between the file names of "for-foreign-buyers" and the actual link.
+
+- Consider mobile friendliness
+
+- Need to connect "Send Messag" and "Schedule Now" calendly
+
+- I don't like how clicking the "Our Mission" link sometimes just abruptly jumps to its part of the page. 
