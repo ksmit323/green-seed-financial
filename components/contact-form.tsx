@@ -17,8 +17,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would normally handle the form submission
-    // For demo purposes, we'll just show the success message
+    // TODO: Here handle the form submission  
     setIsSubmitted(true)
   }
 

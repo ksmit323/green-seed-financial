@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { Linkedin } from "lucide-react"
 
 import Logo from "@/components/logo"
 
@@ -12,7 +12,7 @@ export default function Footer() {
             <Logo className="text-white mb-4" />
             <p className="text-green-100 mb-4">Empowering global agriculture through innovative financial solutions.</p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-green-100 hover:text-white transition-colors">
+              {/* <Link href="#" className="text-green-100 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
@@ -23,8 +23,8 @@ export default function Footer() {
               <Link href="#" className="text-green-100 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="text-green-100 hover:text-white transition-colors">
+              </Link> */}
+              <Link href="https://www.linkedin.com/in/pearl-robert/" className="text-green-100 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -35,23 +35,18 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-green-100 hover:text-white transition-colors">
+                <Link href="/services/export-assistance" className="text-green-100 hover:text-white transition-colors">
                   U.S. Export Assistance
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-green-100 hover:text-white transition-colors">
+                <Link href="/services/letters-of-credit" className="text-green-100 hover:text-white transition-colors">
                   Letters of Credit
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-green-100 hover:text-white transition-colors">
+                <Link href="/services/international-import" className="text-green-100 hover:text-white transition-colors">
                   International Import
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-green-100 hover:text-white transition-colors">
-                  Financial Consulting
                 </Link>
               </li>
             </ul>
@@ -61,23 +56,13 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-green-100 hover:text-white transition-colors">
+                <Link href="/#about" className="text-green-100 hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-green-100 hover:text-white transition-colors">
+                <Link href="/#values" className="text-green-100 hover:text-white transition-colors">
                   Our Mission
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-green-100 hover:text-white transition-colors">
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-green-100 hover:text-white transition-colors">
-                  Careers
                 </Link>
               </li>
             </ul>
@@ -86,20 +71,20 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Contact</h3>
             <address className="not-italic text-green-100">
-              <p>123 Financial District</p>
-              <p>New York, NY 10001</p>
-              <p className="mt-2">info@greenseedfinancial.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>123 Big Shrimpin Street, BubbaGump, Vietnam</p>
+              <p>BubbaGump, Vietnam</p>
+              <p className="mt-2">robert@greenseedfinancial.com</p>
+              <p>+1 (954) 439-6108</p>
             </address>
           </div>
         </div>
 
-        <div className="border-t border-green-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-green-100 text-sm">
+        <div className="border-t border-green-800 mt-12 pt-6 flex flex-col md:flex-row justify-center items-center">
+          <p className="text-green-100 text-sm text-center">
             &copy; {new Date().getFullYear()} Green Seed Financial LLC. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="#" className="text-green-100 hover:text-white text-sm transition-colors">
+            {/* <Link href="#" className="text-green-100 hover:text-white text-sm transition-colors">
               Privacy Policy
             </Link>
             <Link href="#" className="text-green-100 hover:text-white text-sm transition-colors">
@@ -107,7 +92,7 @@ export default function Footer() {
             </Link>
             <Link href="#" className="text-green-100 hover:text-white text-sm transition-colors">
               Cookie Policy
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
