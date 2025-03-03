@@ -77,59 +77,68 @@ export default function Header() {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed inset-0 bg-white z-50 flex flex-col"
-          >
-            <div className="container px-4 py-5 flex items-center justify-between">
-              <Link href="/" className="flex items-center">
-                <Logo className="text-green-700" />
-              </Link>
-              <button onClick={() => setIsMobileMenuOpen(false)} aria-label="Close menu">
-                <X className="text-gray-700" />
-              </button>
-            </div>
-
-            <div className="flex flex-col items-center justify-center flex-1 gap-8">
-              <Link
-                href="/#services"
-                className="text-xl font-medium text-gray-700 hover:text-green-700"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Services
-              </Link>
-              <Link
-                href="/#values"
-                className="text-xl font-medium text-gray-700 hover:text-green-700"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Our Mission
-              </Link>
-              <Link
-                href="/#about"
-                className="text-xl font-medium text-gray-700 hover:text-green-700"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                href="/#contact"
-                className="text-xl font-medium text-gray-700 hover:text-green-700"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
-              </Link>
-              <Button
-                className="bg-green-700 hover:bg-green-800 text-white mt-4"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Get Started
-              </Button>
-            </div>
-          </motion.div>
+          <>
+            {/* Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="fixed inset-0 bg-black bg-opacity-50 z-40"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+      
+            {/* Mobile Menu */}
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="fixed top-0 right-0 w-3/4 h-full bg-white z-50 flex flex-col shadow-lg"
+            >
+              <div className="container px-4 py-5 flex items-center justify-between">
+                <Link href="/" className="flex items-center">
+                  <Logo className="text-green-700" />
+                </Link>
+                <button onClick={() => setIsMobileMenuOpen(false)} aria-label="Close menu">
+                  <X className="text-gray-700" />
+                </button>
+              </div>
+            
+              <div className="flex-1 overflow-y-auto">
+                <div className="flex flex-col items-start gap-8 py-8 px-4">
+                  <Link
+                    href="/#services"
+                    className="text-xl font-medium text-gray-700 hover:text-green-700"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Services
+                  </Link>
+                  <Link
+                    href="/#values"
+                    className="text-xl font-medium text-gray-700 hover:text-green-700"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Our Mission
+                  </Link>
+                  <Link
+                    href="/#about"
+                    className="text-xl font-medium text-gray-700 hover:text-green-700"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    About
+                  </Link>
+                  <Link
+                    href="/#contact"
+                    className="text-xl font-medium text-gray-700 hover:text-green-700"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>

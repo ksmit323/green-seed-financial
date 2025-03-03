@@ -59,7 +59,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-green-950/70 to-green-900/50" />
         </div>
-
+      
         <div className="container relative z-10 px-4 md:px-6">
           <div className="max-w-3xl text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -69,26 +69,30 @@ export default function Home() {
               Facilitating the export/import of U.S. agricultural products and helping foreign buyers obtain letters of
               credit.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              
+            <div className="flex flex-col sm:flex-row gap-4 pb-16">
               <Link href="/services/export-assistance">
-                <Button size="lg" className="bg-white hover:bg-gray-50 text-green-600 border-2 border-green-600 font-semibold rounded-full px-6 py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-md ml-4">
+                <Button
+                  size="lg"
+                  className="bg-white hover:bg-gray-50 text-green-600 border-2 border-green-600 font-semibold rounded-full px-6 py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-md w-full sm:w-auto"
+                >
                   For U.S. Exporters
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href="/services/international-import">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full px-6 py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-md">
+                <Button
+                  size="lg"
+                  className="bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full px-6 py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-md w-full sm:w-auto"
+                >
                   For Foreign Buyers
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              
             </div>
           </div>
         </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white">
+      
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z- Gogh10">
           <Link href="#services" className="flex flex-col items-center">
             <span className="text-sm mb-2">Discover Our Services</span>
             <ChevronDown className="h-6 w-6 animate-bounce" />
@@ -179,6 +183,7 @@ export default function Home() {
                 alt="Agricultural exports being loaded for shipping"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
                 className="object-cover"
               />
             </div>
@@ -252,6 +257,7 @@ export default function Home() {
                 alt="Green Seed Financial team members"
                 fill
                 className="object-contain"
+                loading="lazy"
               />
             </div>
           </div>
