@@ -16,7 +16,7 @@ const services = {
       "We help U.S. agricultural producers expand their markets globally through tailored financial solutions.",
     longDescription:
       "Our U.S. Export Assistance service empowers American agricultural companies to break into international markets. We guide you in finding reliable buyers, executing sales seamlessly, and ensuring you receive full payment as soon as your goods reach the foreign buyer. With global markets rapidly evolving, we help your business adapt and capitalize on new opportunities.",
-    image: "/us-farmer.jpg?height=800&width=1200",
+    image: "/us-farmer.webp",
     features: [
       {
         title: "Find a Buyer",
@@ -38,7 +38,7 @@ const services = {
       "Secure international transactions with our specialized letter of credit services for agricultural trade.",
     longDescription:
       "Our Letters of Credit service assists foreign businesses in obtaining the necessary credit to purchase American agricultural products and materials. We simplify the process and continuously explore innovative options to ensure you receive the best financing solutions for your procurement needs.",
-    image: "/letter-of-credit-2.jpg?height=800&width=1200",
+    image: "/letter-of-credit-2.webp",
     features: [
       {
         title: "Streamlined Process",
@@ -70,7 +70,7 @@ const services = {
           <p>In addition to sourcing these products, we assist in securing Letters of Credit to streamline transactions, making your import process smooth and secure.</p>
         </>
       ),
-    image: "/foreign-field.jpg?height=800&width=1200",
+    image: "/foreign-field.webp",
     features: [
       {
         title: "Diverse Product Selection",

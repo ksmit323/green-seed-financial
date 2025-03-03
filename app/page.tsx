@@ -51,7 +51,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/field.jpg?height=1080&width=1920"
+            src="/field.webp"
             alt="Agricultural landscape with modern financial overlay"
             fill
             priority
@@ -175,7 +175,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-xl overflow-hidden">
               <Image
-                src="/exports.jpg?height=800&width=1200"
+                src="/exports.webp"
                 alt="Agricultural exports being loaded for shipping"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
