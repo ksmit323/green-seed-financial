@@ -31,6 +31,39 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Preload critical images */}
+        <link
+          rel="preload"
+          href="/exports.webp"
+          as="image"
+          type="image/webp"
+        />
+        <link
+          rel="preload"
+          href="/field.webp"
+          as="image"
+          type="image/webp"
+        />
+        <link
+          rel="preload"
+          href="/foreign-field.webp"
+          as="image"
+          type="image/webp"
+        />
+        <link
+          rel="preload"
+          href="/letter-of-credit-2.webp"
+          as="image"
+          type="image/webp"
+        />
+        <link
+          rel="preload"
+          href="/us-farmer.webp"
+          as="image"
+          type="image/webp"
+        />
+      </head>
       <body className={`${montserrat.variable} font-sans antialiased`}>
         <SchemaOrg />
         {children}

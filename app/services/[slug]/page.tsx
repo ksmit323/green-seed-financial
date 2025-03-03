@@ -1,12 +1,12 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowLeft, ArrowRight } from "lucide-react"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
+import { Button } from "@/components/ui/button";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import AnimatedSection from "@/components/animated-section";
 
 // Define the service data
 const services = {
@@ -58,18 +58,18 @@ const services = {
     title: "International Import",
     description:
       "Facilitating smooth import of U.S. agricultural products for foreign buyers with comprehensive financial support.",
-      longDescription: (
-        <>
-          <p>We provide access to a wide selection of high-quality American agricultural products, helping farmers, processors, distributors, and storage facilities secure the goods they need. Our offerings include:</p>
-            <li>  <strong>Shrimp Broodstock</strong></li>
-            <li><strong>Feed</strong></li>
-            <li><strong>Facility Improvements</strong></li>
-            <li><strong>Alcohol</strong></li>
-            <li><strong>Fresh Produce</strong></li>
-          <br/>
-          <p>In addition to sourcing these products, we assist in securing Letters of Credit to streamline transactions, making your import process smooth and secure.</p>
-        </>
-      ),
+    longDescription: (
+      <>
+        <p>We provide access to a wide selection of high-quality American agricultural products, helping farmers, processors, distributors, and storage facilities secure the goods they need. Our offerings include:</p>
+        <li><strong>Shrimp Broodstock</strong></li>
+        <li><strong>Feed</strong></li>
+        <li><strong>Facility Improvements</strong></li>
+        <li><strong>Alcohol</strong></li>
+        <li><strong>Fresh Produce</strong></li>
+        <br />
+        <p>In addition to sourcing these products, we assist in securing Letters of Credit to streamline transactions, making your import process smooth and secure.</p>
+      </>
+    ),
     image: "/foreign-field.webp",
     features: [
       {
@@ -88,25 +88,23 @@ const services = {
   },
 };
 
-
-
 // Define the types for our params and service data
 type ServiceParams = {
-  slug: keyof typeof services
-}
+  slug: keyof typeof services;
+};
 
 type Feature = {
-  title: string,
-  description: string,
-}
+  title: string;
+  description: string;
+};
 
 type ServiceData = {
-  title: string
-  description: string
-  longDescription: string
-  image: string
-  features: Feature[]
-}
+  title: string;
+  description: string;
+  longDescription: string | JSX.Element;
+  image: string;
+  features: Feature[];
+};
 
 // Generate static params for all service pages
 export function generateStaticParams(): ServiceParams[] {
@@ -114,15 +112,15 @@ export function generateStaticParams(): ServiceParams[] {
 }
 
 // Generate metadata for each service page
-export async function generateMetadata({ params }: { params: ServiceParams }): Promise<Metadata> {
-  const { slug } = await Promise.resolve(params);
+export async function generateMetadata({ params }: { params: Promise<ServiceParams> }): Promise<Metadata> {
+  const { slug } = await params;
   const service = services[slug];
 
   if (!service) {
     return {
       title: "Service Not Found | Green Seed Financial LLC",
       description: "The requested service could not be found.",
-    }
+    };
   }
 
   return {
@@ -140,11 +138,12 @@ export async function generateMetadata({ params }: { params: ServiceParams }): P
         },
       ],
     },
-  }
+  };
 }
 
-export default async function ServicePage({ params }: { params: ServiceParams }) {
-  const { slug } = await Promise.resolve(params);
+// Page component
+export default async function ServicePage({ params }: { params: Promise<ServiceParams> }) {
+  const { slug } = await params;
   const serviceData = services[slug] as ServiceData;
 
   if (!serviceData) {
@@ -162,7 +161,7 @@ export default async function ServicePage({ params }: { params: ServiceParams })
         </div>
         <Footer />
       </main>
-    )
+    );
   }
 
   return (
@@ -204,7 +203,6 @@ export default async function ServicePage({ params }: { params: ServiceParams })
       <AnimatedSection className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Key Features</h2>
-          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceData.features.map((feature, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-8 shadow-sm">
@@ -216,7 +214,6 @@ export default async function ServicePage({ params }: { params: ServiceParams })
               </div>
             ))}
           </div>
-          
         </div>
       </AnimatedSection>
 
@@ -246,6 +243,5 @@ export default async function ServicePage({ params }: { params: ServiceParams })
 
       <Footer />
     </main>
-  )
+  );
 }
-
