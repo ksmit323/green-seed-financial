@@ -40,7 +40,7 @@ export default function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerClass}`}>
       <div className="container px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Logo isScrolled={isScrolled} />
+          <Logo isHome={isHomePage} isScrolled={isScrolled} />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">

@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <Logo className="text-white mb-4" />
+            <Logo isFooter={true} className="text-white mb-4" />
             <p className="text-green-100 mb-4">Empowering global agriculture through innovative financial solutions.</p>
             <div className="flex space-x-4">
               {/* <Link href="#" className="text-green-100 hover:text-white transition-colors">
