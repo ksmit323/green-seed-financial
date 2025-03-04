@@ -17,7 +17,7 @@ export function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsLoading(true) // Start loading
+    setIsLoading(true) 
     const formData = new FormData(e.target as HTMLFormElement)
     const data = Object.fromEntries(formData.entries())
 
