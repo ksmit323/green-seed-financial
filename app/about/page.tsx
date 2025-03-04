@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import AnimatedSection from "@/components/animated-section"
+import { aboutContent } from "@/lib/content"
 
 export const metadata: Metadata = {
   title: "About Us | Green Seed Financial LLC",
@@ -29,10 +30,10 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                About Green Seed Financial
+                {aboutContent.hero.title}
               </h1>
               <p className="text-lg text-gray-600 mb-6">
-                Green Seed Financial is a pioneering force in agricultural trading and finance. We drive the agriculture industry forward by providing international importers with essential letters of credit and tailored financial solutions. Our focus is not only on seamless trade but also on cultivating a sustainable future for agriculture.
+                {aboutContent.hero.description}
               </p>
               <Link href="/#contact">
                 <Button className="bg-green-700 hover:bg-green-800 text-white">
@@ -60,21 +61,21 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Our Mission</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Empower Agricultural Growth</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">{aboutContent.mission[0].title}</h3>
               <p className="text-gray-600">
-                We deliver tailored financial solutions designed to drive innovation and growth across the agricultural sector.
+                {aboutContent.mission[0].description}
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Facilitate Seamless Trade</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">{aboutContent.mission[1].title}</h3>
               <p className="text-gray-600">
-                By connecting international importers with vital letters of credit, we streamline trade and bolster global markets.
+                {aboutContent.mission[1].description}
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Cultivate Sustainability</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">{aboutContent.mission[2].title}</h3>
               <p className="text-gray-600">
-                Our commitment goes beyond transactions—we’re dedicated to building a sustainable future for agriculture.
+                {aboutContent.mission[2].description}
               </p>
             </div>
           </div>
@@ -85,10 +86,10 @@ export default function AboutPage() {
       <AnimatedSection className="py-20 bg-green-50">
         <div className="container px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">
-            Join Us in Shaping the Future of Agricultural Finance
+            {aboutContent.cta.title}
           </h2>
           <p className="max-w-2xl mx-auto text-gray-600 mb-8">
-            Whether you&apos;re a U.S. exporter or a foreign buyer, Green Seed Financial is here to support your growth and innovation.
+            {aboutContent.cta.description}
           </p>
           <Link href="/#contact">
             <Button size="lg" className="bg-green-700 hover:bg-green-800 text-white">

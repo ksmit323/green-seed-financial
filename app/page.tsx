@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import type { Metadata } from "next"
 import { ArrowRight, ChevronDown, Globe, Leaf, ShieldCheck, TrendingUp } from "lucide-react"
 import { Phone, Mail, MapPin } from "lucide-react"
 
@@ -10,15 +9,14 @@ import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import AnimatedSection from "@/components/animated-section"
 import ScheduleButton from "@/components/schedule-button"
+import { homeContent, metadataContent, servicesContent } from "@/lib/content";
 
-export const metadata: Metadata = {
-  title: "Green Seed Financial LLC | Agricultural Export/Import Solutions",
-  description:
-    "Empowering global agriculture through financial solutions. We facilitate export/import of U.S. agricultural products and help foreign buyers obtain letters of credit.",
+export const metadata = {
+  title: metadataContent.home.title,
+  description: metadataContent.home.description,
   openGraph: {
-    title: "Green Seed Financial LLC | Agricultural Export/Import Solutions",
-    description:
-      "Empowering global agriculture through financial solutions for export/import of U.S. agricultural products.",
+    title: metadataContent.home.title,
+    description: metadataContent.home.description,
     images: [
       {
         url: "/og-image.jpg",
@@ -32,9 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Green Seed Financial LLC | Agricultural Export/Import Solutions",
-    description:
-      "Empowering global agriculture through financial solutions for export/import of U.S. agricultural products.",
+    title: metadataContent.home.title,
+    description: metadataContent.home.description,
     images: ["/twitter-image.jpg"],
   },
   alternates: {
@@ -63,11 +60,10 @@ export default function Home() {
         <div className="container relative z-10 px-4 md:px-6">
           <div className="max-w-3xl text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Empowering Global Agriculture Through Financial Solutions
+              {homeContent.hero.title}
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-100">
-              Facilitating the export/import of U.S. agricultural products and helping foreign buyers obtain letters of
-              credit.
+              {homeContent.hero.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pb-16">
               <Link href="/services/export-assistance">
@@ -92,7 +88,7 @@ export default function Home() {
           </div>
         </div>
       
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z- Gogh10">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z-10">
           <Link href="#services" className="flex flex-col items-center">
             <span className="text-sm mb-2">Discover Our Services</span>
             <ChevronDown className="h-6 w-6 animate-bounce" />
@@ -104,9 +100,11 @@ export default function Home() {
       <AnimatedSection id="services" className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              {homeContent.services.title}
+            </h2>
             <p className="max-w-2xl mx-auto text-gray-600">
-              Comprehensive financial solutions tailored for agricultural export and import needs.
+              {homeContent.services.description}
             </p>
           </div>
 
@@ -116,9 +114,11 @@ export default function Home() {
               <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                 <Globe className="h-7 w-7 text-green-700" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">U.S. Export Assistance</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">
+                {servicesContent["export-assistance"].title}
+              </h3>
               <p className="text-gray-600 mb-4">
-                We help U.S. agricultural producers expand their markets globally through tailored financial solutions.
+                {servicesContent["export-assistance"].description}
               </p>
               <Link
                 href="/services/export-assistance"
@@ -133,9 +133,11 @@ export default function Home() {
               <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                 <ShieldCheck className="h-7 w-7 text-green-700" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Letters of Credit</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">
+                {servicesContent["letters-of-credit"].title}
+              </h3>
               <p className="text-gray-600 mb-4">
-                Secure international transactions with our specialized letter of credit services for agricultural trade.
+                {servicesContent["letters-of-credit"].description}
               </p>
               <Link
                 href="/services/letters-of-credit"
@@ -150,10 +152,11 @@ export default function Home() {
               <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                 <TrendingUp className="h-7 w-7 text-green-700" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">International Import</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">
+                {servicesContent["international-import"].title}
+              </h3>
               <p className="text-gray-600 mb-4">
-                Facilitating smooth import of U.S. agricultural products for foreign buyers with comprehensive financial
-                support.
+                {servicesContent["international-import"].description}
               </p>
               <Link
                 href="/services/international-import"
@@ -170,9 +173,11 @@ export default function Home() {
       <AnimatedSection id="values" className="py-20 bg-green-50">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Mission</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              {homeContent.mission.title}
+            </h2>
             <p className="max-w-2xl mx-auto text-gray-600">
-              Bridging the gap between agricultural producers and global markets through innovative financial solutions.
+              {homeContent.mission.description}
             </p>
           </div>
 
@@ -189,41 +194,23 @@ export default function Home() {
             </div>
 
             <div className="space-y-8">
-              <div className="flex gap-4">
-                <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Leaf className="h-6 w-6 text-green-700" />
+              {homeContent.mission.values.map((value, index) => (
+                <div key={index} className="flex gap-4">
+                  <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    {index === 0 ? (
+                      <Leaf className="h-6 w-6 text-green-700" />
+                    ) : index === 1 ? (
+                      <ShieldCheck className="h-6 w-6 text-green-700" />
+                    ) : (
+                      <Globe className="h-6 w-6 text-green-700" />
+                    )}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900">{value.title}</h3>
+                    <p className="text-gray-600">{value.description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Sustainable Growth</h3>
-                  <p className="text-gray-600">
-                    We believe in promoting sustainable agricultural practices while facilitating global trade.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                  <ShieldCheck className="h-6 w-6 text-green-700" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Trust & Reliability</h3>
-                  <p className="text-gray-600">
-                    Building long-term relationships based on trust and delivering reliable financial solutions.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Globe className="h-6 w-6 text-green-700" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Global Perspective</h3>
-                  <p className="text-gray-600">
-                    Understanding diverse markets and providing tailored solutions for international agricultural trade.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -234,14 +221,14 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">About Green Seed Financial</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                {homeContent.about.title}
+              </h2>
               <p className="text-gray-600 mb-4">
-                Founded with a vision to bridge the gap between U.S. agricultural producers and international markets,
-                Green Seed Financial LLC has established itself as a trusted partner in agricultural finance.
+                {homeContent.about.description}
               </p>
               <p className="text-gray-600 mb-6">
-                Our team combines expertise in both agriculture and finance, providing specialized solutions that
-                address the unique challenges of international agricultural trade.
+                {homeContent.about.additionalText}
               </p>
               <Link href="/about">
                 <Button className="bg-green-700 hover:bg-green-800 text-white">
@@ -268,10 +255,11 @@ export default function Home() {
       <AnimatedSection id="contact" className="py-20 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Get in Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              {homeContent.contact.title}
+            </h2>
             <p className="max-w-2xl mx-auto text-gray-600">
-              Have questions about our services? Reach out to our team for personalized assistance or schedule a
-              consultation.
+              {homeContent.contact.description}
             </p>
           </div>
 
@@ -286,23 +274,25 @@ export default function Home() {
                 <div className="space-y-4">
                   <p className="flex items-center text-gray-600">
                     <Phone className="h-5 w-5 mr-2 text-green-700" />
-                    +1 (954) 439-6108
+                    {homeContent.contact.info.phone}
                   </p>
                   <p className="flex items-center text-gray-600">
                     <Mail className="h-5 w-5 mr-2 text-green-700" />
-                    robert@greenseedfinancial.com
+                    {homeContent.contact.info.email}
                   </p>
                   <p className="flex items-center text-gray-600">
                     <MapPin className="h-5 w-5 mr-2 text-green-700" />
-                    123 Big Shrimpin Street, BubbaGump, Vietnam 
+                    {homeContent.contact.info.address}
                   </p>
                 </div>
               </div>
 
               <div className="bg-green-50 rounded-xl p-8">
-                <h3 className="text-xl font-bold mb-4 text-gray-900">Schedule a Consultation</h3>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  {homeContent.contact.consultation.title}
+                </h3>
                 <p className="text-gray-600 mb-4">
-                  Book a time that works for you to discuss your agricultural financial needs.
+                  {homeContent.contact.consultation.description}
                 </p>
                 <ScheduleButton />
               </div>
