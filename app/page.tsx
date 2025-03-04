@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import ContactForm from "@/components/contact-form"
+import { ContactForm } from "@/components/contact-form"
 import AnimatedSection from "@/components/animated-section"
 import ScheduleButton from "@/components/schedule-button"
 
