@@ -28,11 +28,11 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  twitter: {
+  linkedIn: {
     card: "summary_large_image",
     title: metadataContent.home.title,
     description: metadataContent.home.description,
-    images: ["/twitter-image.jpg"],
+    images: ["/logo.png"],
   },
   alternates: {
     canonical: "https://greenseedfinancial.com",
