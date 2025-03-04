@@ -50,7 +50,7 @@ export default function Header() {
           <Link href="/#values" className={`font-medium hover:text-green-500 transition-colors ${linkClass}`}>
             Our Mission
           </Link>
-          <Link href="/#about" className={`font-medium hover:text-green-500 transition-colors ${linkClass}`}>
+          <Link href={isHomePage ? "/#about" : "/about"} className={`font-medium hover:text-green-500 transition-colors ${linkClass}`}>
             About
           </Link>
           <Link href="/#contact" className={`font-medium hover:text-green-500 transition-colors ${linkClass}`}>
@@ -122,7 +122,7 @@ export default function Header() {
                     Our Mission
                   </Link>
                   <Link
-                    href="/#about"
+                    href={isHomePage ? "/#about" : "/about"}
                     className="text-xl font-medium text-gray-700 hover:text-green-700"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
