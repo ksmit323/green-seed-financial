@@ -1,10 +1,9 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Check } from "lucide-react"
+import { Check, Loader2 } from "lucide-react" 
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -12,13 +11,36 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-export default function ContactForm() {
+export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false) 
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Here handle the form submission  
-    setIsSubmitted(true)
+    setIsLoading(true) // Start loading
+    const formData = new FormData(e.target as HTMLFormElement)
+    const data = Object.fromEntries(formData.entries())
+
+    try {
+      const response = await fetch("api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+      if (response.ok) {
+        setIsSubmitted(true)
+      } else {
+        console.error("Form submission failed")
+        alert("Something went wrong. Please try again.")
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      alert("Something went wrong. Please try again.")
+    } finally {
+      setIsLoading(false) 
+    }
   }
 
   if (isSubmitted) {
@@ -45,22 +67,22 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <Label htmlFor="name">Full Name</Label>
-          <Input id="name" placeholder="John Doe" required />
+          <Input id="name" name="name" placeholder="John Doe" required />
         </div>
         <div className="space-y-2">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" type="email" placeholder="john@example.com" required />
+          <Input id="email" name="email" type="email" placeholder="john@example.com" required />
         </div>
       </div>
 
       <div className="space-y-2">
         <Label htmlFor="company">Company Name</Label>
-        <Input id="company" placeholder="Your Company" />
+        <Input id="company" name="company" placeholder="Your Company" />
       </div>
 
       <div className="space-y-2">
         <Label htmlFor="interest">I&apos;m interested in</Label>
-        <Select>
+        <Select name="interest">
           <SelectTrigger id="interest">
             <SelectValue placeholder="Select an option" />
           </SelectTrigger>
@@ -76,13 +98,23 @@ export default function ContactForm() {
 
       <div className="space-y-2">
         <Label htmlFor="message">Message</Label>
-        <Textarea id="message" placeholder="Tell us about your needs..." className="min-h-[120px]" required />
+        <Textarea id="message" name="message" placeholder="Tell us about your needs..." className="min-h-[120px]" required />
       </div>
 
-      <Button type="submit" className="w-full bg-green-700 hover:bg-green-800 text-white">
-        Send Message
+      <Button
+        type="submit"
+        className="w-full bg-green-700 hover:bg-green-800 text-white flex items-center justify-center"
+        disabled={isLoading} 
+      >
+        {isLoading ? (
+          <>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" /> 
+            Sending...
+          </>
+        ) : (
+          "Send Message"
+        )}
       </Button>
     </form>
   )
 }
-
