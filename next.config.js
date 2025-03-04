@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  // @dev Uncomment the following line to enable export mode.
+  //      This will optimize images and generate static files for faster loading
+  //      but will break the API route. You will optimize SEO and improve performance
+  //      but SEO and performance are already pretty solid so probably won't help too much.
+  // output: "export",
   images: {
     unoptimized: true,
     // formats: ['image/webp'],
