@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, ChevronDown, Globe, Leaf, ShieldCheck, TrendingUp } from "lucide-react"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail } from "lucide-react"
 
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -110,57 +110,63 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
-                <Globe className="h-7 w-7 text-green-700" />
+            <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+              <div className="flex justify-center mb-6">
+                <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center">
+                  <Globe className="h-7 w-7 text-green-700" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">
+              <h3 className="text-xl font-bold mb-3 text-gray-900 max-w-[300px] text-center mx-auto">
                 {servicesContent["export-assistance"].title}
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 flex-grow">
                 {servicesContent["export-assistance"].description}
               </p>
               <Link
                 href="/services/export-assistance"
-                className="text-green-700 font-medium inline-flex items-center hover:text-green-800"
+                className="text-green-700 font-medium inline-flex items-center hover:text-green-800 mt-auto"
               >
                 Learn more <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
 
             {/* Service 2 */}
-            <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
-                <ShieldCheck className="h-7 w-7 text-green-700" />
+            <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+              <div className="flex justify-center mb-6">
+                <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center">
+                  <ShieldCheck className="h-7 w-7 text-green-700" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">
+              <h3 className="text-xl font-bold mb-3 text-gray-900 max-w-[300px] text-center mx-auto">
                 {servicesContent["letters-of-credit"].title}
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 flex-grow">
                 {servicesContent["letters-of-credit"].description}
               </p>
               <Link
                 href="/services/letters-of-credit"
-                className="text-green-700 font-medium inline-flex items-center hover:text-green-800"
+                className="text-green-700 font-medium inline-flex items-center hover:text-green-800 mt-auto"
               >
                 Learn more <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
 
             {/* Service 3 */}
-            <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
-                <TrendingUp className="h-7 w-7 text-green-700" />
+            <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+              <div className="flex justify-center mb-6">
+                <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center">
+                  <TrendingUp className="h-7 w-7 text-green-700" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">
+              <h3 className="text-xl font-bold mb-3 text-gray-900 max-w-[300px] text-center mx-auto">
                 {servicesContent["international-import"].title}
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 flex-grow">
                 {servicesContent["international-import"].description}
               </p>
               <Link
                 href="/services/international-import"
-                className="text-green-700 font-medium inline-flex items-center hover:text-green-800"
+                className="text-green-700 font-medium inline-flex items-center hover:text-green-800o mt-auto"
               >
                 Learn more <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
@@ -279,10 +285,6 @@ export default function Home() {
                   <p className="flex items-center text-gray-600">
                     <Mail className="h-5 w-5 mr-2 text-green-700" />
                     {homeContent.contact.info.email}
-                  </p>
-                  <p className="flex items-center text-gray-600">
-                    <MapPin className="h-5 w-5 mr-2 text-green-700" />
-                    {homeContent.contact.info.address}
                   </p>
                 </div>
               </div>

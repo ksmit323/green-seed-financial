@@ -8,27 +8,27 @@ export const homeContent = {
     description: "We specialize in USDA-backed programs and international funding solutions, helping farmers and agribusinesses get the support they need to grow, trade, and expand."
   },
   mission: {
-    title: "Why Work with Us?",
-    description: "We simplify agricultural financing so our clients can focus on what they do best.",
+    title: "Why Choose GSF?",
+    description: "GSF is not just a financial partner—we are a driving force for agricultural transformation, helping farmers and agribusinesses take control of their growth, financing, and future.",
     values: [
       {
-        title: "Knowledge",
-        description: "We know agricultural financing inside and out. From USDA programs to international trade, we bring real solutions to the table, not just vague promises."
+        title: "Empowering Farmers Through Financing and Market Access",
+        description: "GSF simplifies USDA-backed financing, securing funds for working capital, infrastructure, and trade. Beyond funding, we connect farmers with global buyers and high-quality inputs to maximize production and profitability."
       },
       {
-        title: "Connections", 
-        description: "Our network includes banks, trade partners, and funding programs worldwide, allowing us to create financing strategies that actually make sense for farmers and agribusinesses."
+        title: "Global Sourcing and Trade Expertise", 
+        description: "With a vast global network, GSF links businesses to top suppliers and buyers for essential agricultural products. We streamline logistics, storage, and post-harvest management to ensure seamless farm-to-market movement."
       },
       {
-        title: "Our Goal",
-        description: "At the end of the day, our goal is simple: to help more people in agriculture access the money they need to grow and succeed."
+        title: "Sustainability, Innovation, and Long-Term Growth",
+        description: "GSF integrates climate-smart practices and modern technology to keep agribusinesses competitive. From precision agriculture to supply chain transparency, we help businesses adapt, scale, and thrive."
       }
     ]
   },
   about: {
-    title: "Who We Are",
-    description: "Green Seed Financial is all about making agricultural financing easier to access and understand. We specialize in USDA-backed programs and international funding solutions, helping farmers and agribusinesses get the support they need to grow, trade, and expand.",
-    additionalText: "Whether it's securing financing, building trade partnerships, or navigating global agricultural programs, we simplify the process so our clients can focus on what they do best."
+    title: "Our Mission",
+    description: "Green Seed Financial (GSF) exists to empower farmers and every stakeholder along the agricultural value chain by providing access to financing, high-quality inputs, and global trade opportunities. Agriculture is the foundation of food security and economic development, yet many farmers and agribusinesses struggle with securing funding, sourcing the right products, and expanding into profitable markets. Our mission is to break these barriers and create sustainable, scalable growth for the entire agricultural sector.",
+    additionalText: "We help businesses secure funding through USDA-backed programs like GSM-102 and the Facility Guarantee Program, allowing them to access working capital, build infrastructure, and facilitate trade. At the same time, we ensure agribusinesses can source the best agricultural products, from seeds and fertilizers to machinery and specialty crops, helping them optimize production and expand efficiently. Our consulting services guide businesses through financial strategies, trade regulations, and market expansion, ensuring they can navigate complexities and maximize their potential."
   },
   contact: {
     title: "Let's Talk",
@@ -36,7 +36,6 @@ export const homeContent = {
     info: {
       phone: "+1 (954) 439-6108",
       email: "robert@greenseedfinancial.com",
-      address: "123 Big Shrimpin Street, BubbaGump, Vietnam"
     },
     consultation: {
       title: "Schedule a Consultation",

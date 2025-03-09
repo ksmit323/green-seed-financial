@@ -71,8 +71,6 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Contact</h3>
             <address className="not-italic text-green-100">
-              <p>123 Big Shrimpin Street, BubbaGump, Vietnam</p>
-              <p>BubbaGump, Vietnam</p>
               <p className="mt-2">robert@greenseedfinancial.com</p>
               <p>+1 (954) 439-6108</p>
             </address>
