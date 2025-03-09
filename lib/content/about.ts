@@ -1,24 +1,24 @@
 export const aboutContent = {
   hero: {
-    title: "About Green Seed Financial",
-    description: "Green Seed Financial is a pioneering force in agricultural trading and finance. We drive the agriculture industry forward by providing international importers with essential letters of credit and tailored financial solutions. Our focus is not only on seamless trade but also on cultivating a sustainable future for agriculture."
+    title: "Who We Are",
+    description: "Green Seed Financial is all about making agricultural financing easier to access and understand. We specialize in USDA-backed programs and international funding solutions, helping farmers and agribusinesses get the support they need to grow, trade, and expand."
   },
   mission: [
     {
-      title: "Empower Agricultural Growth",
-      description: "We deliver tailored financial solutions designed to drive innovation and growth across the agricultural sector."
+      title: "Breaking Down Barriers",
+      description: "Financing is often the biggest barrier to agricultural success, and we're here to eliminate that challenge through USDA-backed programs and global funding sources."
     },
     {
-      title: "Facilitate Seamless Trade",
-      description: "By connecting international importers with vital letters of credit, we streamline trade and bolster global markets."
+      title: "Expanding Market Access",
+      description: "We simplify agricultural trade by sourcing and delivering premium agricultural products worldwide, ensuring quality and competitive rates."
     },
     {
-      title: "Cultivate Sustainability",
-      description: "Our commitment goes beyond transactions—we're dedicated to building a sustainable future for agriculture."
+      title: "Expert Guidance",
+      description: "With deep expertise in agricultural finance, global trade policies, and market strategy, we help businesses navigate industry complexities and implement strategies for long-term success."
     }
   ],
   cta: {
-    title: "Join Us in Shaping the Future of Agricultural Finance",
-    description: "Whether you're a U.S. exporter or a foreign buyer, Green Seed Financial is here to support your growth and innovation."
+    title: "Partner With Us to Access Agricultural Financing",
+    description: "Whether you're looking for financing, trade support, or strategic advice, Green Seed Financial can help you navigate the complex world of agricultural finance."
   }
 };

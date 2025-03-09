@@ -1,61 +1,61 @@
 export const servicesContent = {
   "export-assistance": {
-    title: "U.S. Export Assistance",
-    description: "We help U.S. agricultural producers expand their markets globally through tailored financial solutions.",
-    longDescription: "Our U.S. Export Assistance service empowers American agricultural companies to break into international markets. We guide you in finding reliable buyers, executing sales seamlessly, and ensuring you receive full payment as soon as your goods reach the foreign buyer. With global markets rapidly evolving, we help your business adapt and capitalize on new opportunities.",
+    title: "Agricultural Financing & Trade Programs",
+    description: "We provide businesses with access to USDA-backed financing solutions, structuring deals that fuel growth and global trade.",
+    longDescription: "Financing is often the biggest barrier to agricultural success, and GSF is here to eliminate that challenge. We specialize in securing funding through USDA-backed programs like GSM-102 and the Facility Guarantee Program, along with other global agricultural credit facilities. Whether it's working capital, infrastructure development, or trade financing, we structure deals that empower agribusinesses to scale. Our team ensures businesses stay updated on evolving policies and new funding opportunities to maximize their financial potential.",
     image: "/us-farmer.webp",
     features: [
       {
-        title: "Find a Buyer",
-        description: "Connect with trusted international buyers ready to engage with your products.",
+        title: "Building Local Industry",
+        description: "We source funds globally to strengthen local agricultural sectors, ensuring long-term self-sufficiency.",
       },
       {
-        title: "Execute the Sale",
-        description: "Streamline transactions with expert guidance for a smooth sales process.",
+        title: "Maximizing Global Programs",
+        description: "We research and leverage the best worldwide financing programs for agricultural projects and products.",
       },
       {
-        title: "Ensure Full Payment",
-        description: "Secure prompt, full payment as soon as your goods reach the buyer.",
+        title: "Staying Ahead",
+        description: "We continuously monitor and qualify for new funding programs, keeping businesses up to date with evolving policies.",
       },
     ],
   },
   "letters-of-credit": {
-    title: "Letters of Credit",
-    description: "Secure international transactions with our specialized letter of credit services for agricultural trade.",
-    longDescription: "Our Letters of Credit service assists foreign businesses in obtaining the necessary credit to purchase American agricultural products and materials. We simplify the process and continuously explore innovative options to ensure you receive the best financing solutions for your procurement needs.",
+    title: "Agricultural Product Sourcing & Trading",
+    description: "We connect farmers, suppliers, and buyers with high-quality agricultural inputs and commodities to streamline trade and logistics.",
+    longDescription: "GSF simplifies agricultural trade by sourcing and delivering premium agricultural products worldwide. From fertilizers and seeds to seafood, coffee, and specialty crops, we ensure businesses receive the highest-quality products at competitive rates. Our expertise in logistics, cold storage, and regulatory compliance allows us to facilitate seamless international trade, reducing inefficiencies and increasing profitability for producers and buyers alike.",
     image: "/letter-of-credit-2.webp",
     features: [
       {
-        title: "Streamlined Process",
-        description: "Facilitate obtaining a letter of credit quickly and securely.",
+        title: "Optimized Sourcing",
+        description: "We identify the best inputs to enhance agricultural value chains, improving productivity and quality.",
       },
       {
-        title: "Wide Range of Options",
-        description: "Access a variety of agricultural products and materials through flexible solutions.",
+        title: "Global Network",
+        description: "Our worldwide industry connections provide access to top-tier suppliers, buyers, and trade partners.",
       },
       {
-        title: "Innovative Financing",
-        description: "Leverage cutting-edge financial options tailored to your business needs.",
+        title: "Post-Harvest Support",
+        description: "We assist farmers beyond cultivation by improving storage, logistics, and market access.",
       },
     ],
   },
   "international-import": {
-    title: "International Import",
-    description: "Facilitating smooth import of U.S. agricultural products for foreign buyers with comprehensive financial support.",
-    longDescription: "We provide access to a wide selection of high-quality American agricultural products, helping farmers, processors, distributors, and storage facilities secure the goods they need. Our offerings include Shrimp Broodstock, Feed, Facility Improvements, Alcohol, Fresh Produce, and more. In addition to sourcing these products, we assist in securing Letters of Credit to streamline transactions, making your import process smooth and secure.",
+    title: "Consulting & Strategic Advisory",
+    description: "We guide agribusinesses through financing strategies, trade regulations, and market expansion, ensuring they secure the best financial and operational opportunities.",
+    longDescription: "With deep expertise in agricultural finance, global trade policies, and market strategy, GSF helps businesses navigate the complexities of the industry. We work closely with clients to structure financing deals, advocate for improved banking policies, and provide data-driven insights that optimize their investment and trade decisions. Our advisory services ensure businesses maximize available funding programs, understand regulatory landscapes, and implement the best strategies for long-term success.",
     image: "/foreign-field.webp",
     features: [
       {
-        title: "Diverse Product Selection",
-        description: "Access high-quality U.S. agricultural products, from fresh produce to facility improvements.",
+        title: "Project Consultancy",
+        description: "We help businesses develop and refine their agricultural projects, identifying optimal funding and execution strategies.",
       },
       {
-        title: "Streamlined Import Process",
-        description: "Simplify procurement with expert logistical and regulatory support.",
+        title: "Maximizing Benefits",
+        description: "Our advisory services ensure businesses fully utilize the financing and trade programs GSF specializes in.",
       },
       {
-        title: "Secure Financing Solutions",
-        description: "Obtain Letters of Credit to facilitate smooth and secure transactions.",
+        title: "Educational Support",
+        description: "We provide expert guidance through seminars and webinars, equipping stakeholders with the knowledge to succeed.",
       },
     ],
   },

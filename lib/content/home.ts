@@ -1,38 +1,38 @@
 export const homeContent = {
   hero: {
-    title: "Empowering Global Agriculture Through Financial Solutions",
-    description: "Facilitating the export/import of U.S. agricultural products and helping foreign buyers obtain letters of credit."
+    title: "Unlocking Agricultural Financing Worldwide",
+    description: "We help farmers, agribusinesses, and financial institutions get access to the best funding solutions, trade financing, and investment opportunities. We take the complexity out of agricultural finance, connecting people to the programs and resources that actually work."
   },
   services: {
     title: "Our Services",
-    description: "Comprehensive financial solutions tailored for agricultural export and import needs."
+    description: "We specialize in USDA-backed programs and international funding solutions, helping farmers and agribusinesses get the support they need to grow, trade, and expand."
   },
   mission: {
-    title: "Our Mission",
-    description: "Bridging the gap between agricultural producers and global markets through innovative financial solutions.",
+    title: "Why Work with Us?",
+    description: "We simplify agricultural financing so our clients can focus on what they do best.",
     values: [
       {
-        title: "Sustainable Growth",
-        description: "We believe in promoting sustainable agricultural practices while facilitating global trade."
+        title: "Knowledge",
+        description: "We know agricultural financing inside and out. From USDA programs to international trade, we bring real solutions to the table, not just vague promises."
       },
       {
-        title: "Trust & Reliability", 
-        description: "Building long-term relationships based on trust and delivering reliable financial solutions."
+        title: "Connections", 
+        description: "Our network includes banks, trade partners, and funding programs worldwide, allowing us to create financing strategies that actually make sense for farmers and agribusinesses."
       },
       {
-        title: "Global Perspective",
-        description: "Understanding diverse markets and providing tailored solutions for international agricultural trade."
+        title: "Our Goal",
+        description: "At the end of the day, our goal is simple: to help more people in agriculture access the money they need to grow and succeed."
       }
     ]
   },
   about: {
-    title: "About Green Seed Financial",
-    description: "Founded with a vision to bridge the gap between U.S. agricultural producers and international markets, Green Seed Financial LLC has established itself as a trusted partner in agricultural finance.",
-    additionalText: "Our team combines expertise in both agriculture and finance, providing specialized solutions that address the unique challenges of international agricultural trade."
+    title: "Who We Are",
+    description: "Green Seed Financial is all about making agricultural financing easier to access and understand. We specialize in USDA-backed programs and international funding solutions, helping farmers and agribusinesses get the support they need to grow, trade, and expand.",
+    additionalText: "Whether it's securing financing, building trade partnerships, or navigating global agricultural programs, we simplify the process so our clients can focus on what they do best."
   },
   contact: {
-    title: "Get in Touch",
-    description: "Have questions about our services? Reach out to our team for personalized assistance or schedule a consultation.",
+    title: "Let's Talk",
+    description: "Looking for financing or trade support? Green Seed Financial can help. Reach out today and let's figure out the best way to move your business forward.",
     info: {
       phone: "+1 (954) 439-6108",
       email: "robert@greenseedfinancial.com",

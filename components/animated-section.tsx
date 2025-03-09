@@ -27,7 +27,7 @@ export default function AnimatedSection({ children, id, className }: AnimatedSec
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         {children}
-      </motion.div>
+      </motion.div> 
     </section>
   )
 }
