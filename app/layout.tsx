@@ -3,6 +3,7 @@ import type { Metadata } from "next/types"
 import { Montserrat } from "next/font/google"
 import "./globals.css"
 import SchemaOrg from "@/components/schema-org"
+import { Analytics } from "@vercel/analytics/next"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -67,6 +68,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} font-sans antialiased`}>
         <SchemaOrg />
         {children}
+        <Analytics />
       </body>
     </html>
   )
